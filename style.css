@@ -1,0 +1,109 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:"outfit" ,sans-serif ;
+}
+body{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;  
+ background-color: hsl(194, 41%, 89%);   
+}
+.wrapper{
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(54, 141, 241);
+    padding: 20px 30px 120px ;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+.form.login{
+    position: absolute;
+    background-color:#fff;
+    width: calc(100% + 220px);
+    padding: 20px 140px;
+    border-radius: 50%;
+    height: 101%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -86%;
+    transition: all 0.6s ease;
+}
+.wrapper.active .form.login{
+    bottom: -15%;
+    border-radius: 42%;
+    
+}
+.form header{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+form a{
+    color: #333;
+    text-decoration: none;
+}
+form a:hover{
+    
+    text-decoration: underline;
+}
+.wrapper form{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+form input{
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 400px;
+    color: #333;
+    border-radius: 8px;
+}
+.form.login input{
+    border: 1px solid rgb(179, 175, 175);
+}
+.form.login input:focus{
+    box-shadow: 0 1px 0 #ddd;
+}
+form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form .checkbox input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+form .checkbox label{
+    cursor: pointer;
+    color: rgb(244, 237, 237);
+}
+form input[type="submit"]{
+    margin-top: 15px;
+    padding: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form.login input[type="submit"]{
+    background-color: rgb(54, 141, 241);
+    color: white;
+    border: none;
+}
+.form.login header{
+    color: #333;
+    opacity: 0.6;
+}
